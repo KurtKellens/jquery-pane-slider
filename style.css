@@ -1,89 +1,86 @@
-html, body {
-		height:100%;
-		font-size:16px;
-	}
-	
-	body{
-		font-family:verdana;
-		margin:0;
-		padding:0;
-		
-	}
-		*, *::before, *::after{
-		box-sizing: border-box;
-	}
-	
-	.content{
-		padding:2rem;
-		background-color:#555;
-		height:100%;
-		overflow-x:hidden;
-		min-width:450px;
-	}
-	
-	header{
-		min-height:50px;
-		background-color:#000;
-		color:#FFF;
-		padding:15px;
-	}
-	
-	footer{
-		min-height:50px;
-		background-color:#000;
-		color:#FFF;
-		padding:15px;
-	}
-	
-	#panelContainer {
-		display:flex;
-		flex-direction:row;
-		background-color:#ebebeb;
-		color:#FFF;
-		flex:1;
-		overflow:hidden;
-	}
-.panel{
-			position:relative;
-			width:50%;
-		}
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+}
 
-	.slider{
-			z-index:999999;
-			display:block;
-			position:absolute;
-			width:1px;
-			background-color:red;
-			left:0;
-			top:0;
-			bottom:0;
-			overflow:visible;
-			user-select: none;
-		}
-		
-		.slider::before
-		{
-			content:'';
-			position:absolute;
-			left:-0.25rem;
-			top:50%;
-			height:1.5rem;
-			width:0.5rem;
-			background-color:red;
-			cursor:col-resize;
-		}
-		
-	.wrapper{
-		display:flex;
-		flex-direction:column;
-		height:100%;
-	}
-		
+body {
+  font-family: verdana;
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-		
-		img
-		{
-			min-width:250px;
-			max-width:100%;
-			height:auto;
-		}
+.content {
+  padding: 2rem;
+  background-color: #555;
+  height: 100%;
+  overflow-x: hidden;
+  min-width: 450px;
+}
+
+header {
+  min-height: 50px;
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+}
+
+footer {
+  min-height: 50px;
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+}
+
+#panelContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #ebebeb;
+  color: #fff;
+  flex: 1;
+  overflow: hidden;
+}
+.panel {
+  position: relative;
+  width: 50%;
+}
+
+.slider {
+  z-index: 999999;
+  display: block;
+  position: absolute;
+  width: 1px;
+  background-color: red;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: visible;
+  user-select: none;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  left: -0.25rem;
+  top: 50%;
+  height: 1.5rem;
+  width: 0.5rem;
+  background-color: red;
+  cursor: col-resize;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
